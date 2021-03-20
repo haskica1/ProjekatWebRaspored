@@ -1,0 +1,17 @@
+DELETE,/all,null,{\"message\":\"Sadržaj datoteke uspješno obrisan!\"}
+GET,/predmeti,null,[]
+GET,/aktivnosti,null,[]
+POST,/predmet,{\"naziv\":\"OOI\"},{\"message\":\"Predmet je uspješno dodan!\"}
+POST,/aktivnost,{\"naziv\":\"OOI\",\"tip\":\"predavanje\",\"pocetak\":\"09:00\",\"kraj\":\"12:00\",\"dan\":\"ponedjeljak\"}​​​​​,{\"message\":\"Aktivnost uspješno dodana!\"}
+GET,/predmet/OOI/aktivnost/,null,[{\"naziv\":\"OOI\",\"tip\":\"predavanje\",\"pocetak\":\"09:00\",\"kraj\":\"12:00\",\"dan\":\"ponedjeljak\"}]
+GET,/predmeti,null,[{"naziv":"OOI"}]
+GET,/aktivnosti,null,[{"naziv":"OOI","tip":"predavanje","pocetak":"09:00","kraj":"12:00","dan":"ponedjeljak"}]
+POST,/predmet,{\"naziv\":\"WT\"},{\"message\":\"Predmet je uspješno dodan!\"}
+GET,/predmeti,null,[{"naziv":"OOI"},{"naziv":"WT"}]
+DELETE,/aktivnost/OOI,null,{\"message\":\"Uspješno obrisana aktivnost!\"}
+GET,/aktivnosti,null,[]
+DELETE,/predmet/OOI,null,{\"message\":\"Uspješno obrisan predmet!\"}
+POST,/aktivnost,{\"naziv\":\"WT\",\"tip\":\"predavanje\",\"pocetak\":\"09:00\",\"kraj\":\"12:00\",\"dan\":\"utorak\"}​​​​​,{\"message\":\"Aktivnost uspješno dodana!\"}
+DELETE,/aktivnost/WT,null,{\"message\":\"Uspješno obrisana aktivnost!\"}
+DELETE,/predmet/WT,null,{\"message\":\"Uspješno obrisan predmet!\"}
+DELETE,/all,null,{\"message\":\"Sadržaj datoteke uspješno obrisan!\"}

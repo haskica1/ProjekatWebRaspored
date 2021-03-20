@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="planiranjeNastavnik.css">
+</head>
+
+<body>
+
+    <ul>
+        <li><a href="raspored.html">Raspored</a></li>
+        <li><a href="aktivnost.html">Aktivnosti</a></li>
+        <li><a href="planiranjeNastavnik.html">Planiranje-nastavnik</a></li>
+        <li><a href="podaciStudent.html">Podaci-student</a></li>
+        <li><a href="spirala2rasporedi.html">Raspored-spirala2</a></li>
+    </ul>
+
+    <div class="grid-container">
+        <div class="grid-item grid-labela" >
+            <label for="naziv">Naziv predmeta</label>
+        </div>
+        <div class="grid-item grid-unos">
+            <input type="text" id="naziv" name="naziv">
+        </div>
+        <div class="grid-item grid-labela" >
+            <label >Tip</label>
+        </div>
+        <div class="grid-item grid-unos" >
+            <select name="tipovi" id="tipovi">
+                <option value="predavanje">Predavanje</option>
+                <option value="vjezbe">Vjezbe</option>
+            </select>
+        </div>
+        <div class="grid-item grid-labela" >
+            <label for="datum-pocetka">Datum početka</label>
+        </div>
+        <div class="grid-item grid-unos" >
+            <input type="time" id="datum-pocetka" name="datum-pocetka">
+        </div>
+        <div class="grid-item grid-labela" >
+            <label for="datum-kraja">Datum kraja</label>
+        </div>
+        <div class="grid-item grid-unos" >
+            <input type="time" id="datum-kraja" name="datum-kraja">
+        </div>
+        <div class="grid-item grid-labela" >
+            <label >Dan u sedmici</label>
+        </div>
+        <div class="grid-item grid-unos" id="grid-unos">
+            <select name="sedmica" id="sedmica">
+                <option value="ponedjeljak">Ponedjeljak</option>
+                <option value="utorak">Utorak</option>
+                <option value="srijeda">Srijeda</option>
+                <option value="cetvrtak">Četvrtak</option>
+                <option value="petak">Petak</option>
+            </select><br>
+        </div>
+
+    </div>
+
+    <button onclick="dodajAktivnost()">Dodaj</button>
+    <p id="demo">Ništa još</p>
+  
+  
+  <script>
+  function dodajAktivnost() {
+    var predmet = document.getElementById("naziv").value; 
+    var _tip = document.getElementById("tip").value;
+    var _pocetak = document.getElementById("pocetak").value;
+    var _kraj = document.getElementById("kraj").value;
+    var _dan = document.getElementById("dan").value;
+    
+    handleAktivnost(predmet, _tip, _pocetak, _kraj, _dan);
+   
+  }
+  </script>
+
+</body>
+
+</html>

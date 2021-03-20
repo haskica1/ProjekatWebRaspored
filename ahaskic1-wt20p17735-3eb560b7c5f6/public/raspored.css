@@ -1,0 +1,198 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(27, auto);
+    grid-template-rows: 1fr 4fr 4fr 4fr 4fr 4fr;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    text-align: center;
+    min-width: 10px;
+    background-color: #d9d9d9;
+}
+
+.isprekidana {
+
+    border-right: 1px dashed black;
+}
+
+.punaDesno {
+    border-left: unset;
+}
+
+#vrijeme {
+    border: none;
+}
+
+.dani {
+    border: unset;
+    text-align: right;
+    background-color: white;
+    padding-right: 10px;
+}
+
+.box2 {
+    grid-column: span 6/10;
+}
+
+.box3 {
+    grid-column: span 3/13;
+    text-align: center;
+    align-self: center;
+    background-color: lavender;
+    border-left: unset;
+    
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-right: unset;
+    border-right: 1px dashed black;
+}
+
+.box4 {
+    grid-column: span 6/20;
+}
+
+.box5 {
+    grid-column: span 3/14;
+    text-align: center;
+    align-self: center;
+    background-color: lavender;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-left: unset;
+}
+
+.box6 {
+    grid-column: span 4/18;
+}
+
+.box7 {
+    grid-column: span 6/24;
+}
+
+.box8 {
+    grid-column: span 6/16;
+}
+
+.box9 {
+    grid-column: span 6/22;
+    background-color: #d9d9d9;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.box10 {
+    grid-column: span 3/4;
+}
+
+.box11 {
+    grid-column: span 2/7;
+}
+
+.box12 {
+    grid-column: span 2/11;
+}
+
+.box13 {
+    grid-column: span 2/17;
+}
+
+.box14 {
+    grid-column: span 2/21;
+}
+
+.box15 {
+    grid-column: span 2/25;
+}
+
+.grid-line {
+    background-color: white;
+}
+
+.boxLayout {
+    text-align: center;
+    align-self: center;
+    background-color: lavender;
+    border-left: unset;
+    border-right: unset;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.boxLayout2 {
+    text-align: center;
+    background-color: white;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111111;
+  }
+
+  .desnaPrazna{
+      border-right: rebeccapurple;
+  }
+
+  @media screen and (max-width: 600px) {
+
+    .grid-container {
+        display: table;
+        width: 500px;
+    }
+
+    .box10{
+        display: none;
+    }
+    .box11{
+        display: none;
+    }
+    .box12{
+        display: none;
+    }
+    .box13{
+        display: none;
+    }
+    .box14{
+        display: none;
+    }
+    .box15{
+        display: none;
+    }
+    .boxLayout{
+        border: none;
+    }
+    .box9{
+        border: none;
+    }
+    .box5{
+        border: none;
+    }
+    .box3{
+        border: none;
+    }
+    .isprekidana{
+        border: none;
+    }
+    .grid-item{
+        border: none;
+    }
+    .dani{
+        text-align: center;
+        background-color: lightslategrey;
+    }
+}

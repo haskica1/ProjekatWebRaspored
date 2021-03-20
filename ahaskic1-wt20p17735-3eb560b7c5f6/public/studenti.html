@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="ajaxRequest.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+<body onload="getGrupe()">  
+<h1>Unos studenata</h1>
+<p>Unesite podatke</p>
+<textarea id="unosStudenta" name="unosStudenta" rows="10" cols="150">   
+</textarea> 
+<br>
+<select name="grupa" id="grupa">
+</select>
+<button onclick="dodajStudenta()">Submit</button>   
+<script>
+    var grupe;
+    function getGrupe()
+    {
+        getGrupeAjax()
+    }
+    function dodajStudenta()
+    {
+        var tekst = document.getElementById('unosStudenta').value;
+        var grupa = document.getElementById('grupa').value;  
+        dodajStudentaAjax(tekst,grupa);  
+    }
+</script>
+</body>
+</html>
